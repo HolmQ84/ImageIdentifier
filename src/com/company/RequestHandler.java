@@ -1,13 +1,9 @@
 package com.company;
 
-import netscape.javascript.JSObject;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.File;
-import java.net.Socket;
-import java.util.HashMap;
-import java.util.Map;
 
 public class RequestHandler implements Runnable {
 
