@@ -17,25 +17,23 @@ public class Main {
 
     public static void main(String[] args) {
         try {
+
+            // Opret socket og afvent klient.
             ServerSocket serverSocket = new ServerSocket(6780);
             System.out.println();
             Socket socket = serverSocket.accept();
             requests.put(id, socket);
             id++;
 
-
             // modtager String fra netværk
             InputStreamReader isr = new InputStreamReader(socket.getInputStream());
             BufferedReader bufferedReader = new BufferedReader(isr);
-
             String modtagetString = bufferedReader.readLine();
 
             // Laver string til JSON
             JSONParser parser = new JSONParser();
             Object object = parser.parse(modtagetString);
             JSONObject jsonObject = (JSONObject)object;
-
-
 
         } catch (Exception exception) {
             System.out.println("Error: " + exception.getMessage());
