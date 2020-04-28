@@ -8,8 +8,8 @@ public class Main {
 
     Map<Socket, Integer> requests = new HashMap<>();
 
-
     public static void main(String[] args) {
-
+        RequestHandler rh = new RequestHandler();
+        rh.run();
     }
 }
