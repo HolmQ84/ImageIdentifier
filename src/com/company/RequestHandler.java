@@ -17,7 +17,7 @@ public class RequestHandler implements Runnable {
             Object object = parser.parse(String.valueOf(file));
             JSONObject jsonObject = (JSONObject) object;
 
-        } catch (Exception e) {
+        } catch (Exception ex) {
             System.out.println("Error: " + exception.getMessage());
 
         }
