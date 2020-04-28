@@ -1,4 +1,9 @@
 package com.company;
 
-public class RequestHandler {
+public class RequestHandler implements Runnable {
+
+    @Override
+    public void run() {
+
+    }
 }
