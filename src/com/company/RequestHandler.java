@@ -26,7 +26,7 @@ public class RequestHandler implements Runnable {
         }
     }
 
-    public void String(File file) throws IOException {
+    public void jsonToImg(File file) throws IOException {
         FileInputStream fileInputStream = new FileInputStream(file);
         byte[] bytes = new byte[(int) file.length()];
         fileInputStream.read(bytes);
